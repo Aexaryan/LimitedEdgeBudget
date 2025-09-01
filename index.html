@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaser & Pilot Budget Infographic</title>
+    <title>Limit Edge Budget Overview</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,160 +11,132 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="text-[#0B2D48]">
+<body class="text-gray-800">
 
     <!-- Navigation -->
-    <nav class="bg-[#0B2D48] text-white p-4 shadow-lg">
+    <nav class="bg-[#D86A36] text-white p-4 shadow-lg">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="text-xl font-bold">Teaser & Pilot Project</div>
+            <div class="text-xl font-bold">Limit Edge Reality Show</div>
             <div class="space-x-4">
                 <a href="index.html" class="nav-link active">Budget Overview</a>
-                <a href="project-details.html" class="nav-link">Project Details</a>
+                <a href="project-details.html" class="nav-link">Pre-Production</a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-[#0B2D48] text-white p-8 text-center">
-        <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight">Crafting a Vision: Teaser & Pilot</h1>
-        <p class="mt-4 text-lg text-gray-300">A Strategic Financial Blueprint for a High-Impact Launch</p>
+    <!-- Plan Summary: This infographic provides a comprehensive overview of the "Limit Edge" reality show budget. The narrative is structured to first present the total budget, followed by a high-level allocation breakdown. Subsequent sections detail the costs for each phase: Pre-Production, Production, Post-Production, and Marketing. Finally, it highlights the contingency fund and investor benefits.
+    Visualization Choices:
+    - High-Level Budget Allocation: Donut chart (Chart.js) to show the proportion of the total budget for each main category. Goal: Compare.
+    - Detailed Budget Breakdowns (all phases): Horizontal bar charts (Chart.js) to clearly compare the individual expenses within each phase. Goal: Compare/Organize.
+    - Contingency Fund & Investor Benefits: Styled HTML cards and lists to organize key information, as these are qualitative data points. Goal: Organize/Inform.
+    - NO SVG was used. All charts are rendered to Canvas via Chart.js. -->
+    <!-- Color Palette: Vibrant Blue & Orange -->
+
+    <header class="bg-[#D86A36] text-white p-8 text-center shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight">LIMIT EDGE</h1>
+        <p class="mt-2 text-xl font-bold">PERSIAN SPORTS REALITY SHOW</p>
+        <p class="mt-4 text-lg text-white">A Comprehensive Budget Overview</p>
     </header>
 
     <main class="container mx-auto p-4 md:p-8">
 
-        <section class="text-center mb-12">
-            <p class="text-lg text-[#205375]">Total Project Budget</p>
-            <h2 class="text-7xl md:text-8xl font-black text-[#0B2D48] tracking-tighter my-2">$30,000</h2>
-            <p class="max-w-3xl mx-auto text-gray-600">
-                This infographic details the strategic allocation of a $30,000 budget designed to maximize production quality, ensure a polished final product, and successfully attract investors and broadcasters for a full series commission.
+        <section class="text-center my-12">
+            <h2 class="text-6xl md:text-7xl font-black text-[#5D6D93] tracking-tighter my-4">$460,750</h2>
+            <p class="max-w-4xl mx-auto text-gray-600 text-lg">
+                This financial plan for the "Limit Edge" reality show allocates a total budget of **$460,750**. The strategy is to invest heavily in the core production phase to ensure a high-quality product, while also securing funds for pre-production planning, post-production polish, and a robust marketing and contingency strategy.
             </p>
         </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12 items-center">
-            <div class="md:col-span-3 bg-white rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-bold mb-1">High-Level Budget Allocation</h3>
-                <p class="text-gray-600 mb-4">The budget is primarily dedicated to the production phase, ensuring the highest possible visual and auditory quality. Post-production receives a significant share to guarantee a broadcast-ready polish, with foundational pre-production and essential marketing efforts rounding out the plan.</p>
-                <div class="chart-container h-[350px] md:h-[400px]">
-                    <canvas id="mainAllocationChart"></canvas>
-                </div>
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h3 class="text-3xl font-bold text-center mb-6">Total Budget Allocation</h3>
+            <div class="chart-container h-[450px]">
+                <canvas id="mainAllocationChart"></canvas>
             </div>
-            <div class="md:col-span-2 space-y-4">
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <p class="text-4xl font-black text-[#205375]">50%</p>
-                    <h4 class="text-xl font-bold">Production Focus</h4>
-                    <p class="text-gray-600">The majority of funds are invested directly into filming to achieve superior quality.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <p class="text-4xl font-black text-[#5D93B4]">25%</p>
-                    <h4 class="text-xl font-bold">Post-Production Polish</h4>
-                    <p class="text-gray-600">A dedicated quarter of the budget ensures professional editing, sound, and effects.</p>
-                </div>
-                 <div class="bg-white rounded-lg shadow-md p-6">
-                    <p class="text-4xl font-black text-[#F6B60D]">5%</p>
-                    <h4 class="text-xl font-bold">Marketing & Safety Net</h4>
-                    <p class="text-gray-600">A crucial allocation for promotion and covering unforeseen expenses.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="bg-white rounded-lg shadow-md p-6 mb-12 text-center">
-            <h3 class="text-2xl font-bold mb-4">Team Expense Tracker</h3>
-            <p class="text-gray-600 mb-4">Select a team and click on a bar in any of the charts below to assign that expense.</p>
-            <div id="statusMessage" class="h-6 text-red-500 font-semibold mb-4"></div>
-            <div class="flex flex-col md:flex-row justify-center gap-4 mb-8">
-                <button id="alexanderBtn" class="team-button bg-gray-200 text-[#0B2D48] font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 hover:bg-gray-300">
-                    Alexander
-                </button>
-                <button id="chrisBtn" class="team-button bg-gray-200 text-[#0B2D48] font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 hover:bg-gray-300">
-                    Chris
-                </button>
-                <button id="mustPayBtn" class="team-button bg-gray-200 text-[#0B2D48] font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 hover:bg-gray-300">
-                    MUST PAY
-                </button>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                <div class="bg-gray-100 rounded-lg p-4 shadow-inner">
-                    <h4 class="text-lg font-semibold text-[#0B2D48]">Alexander's Budget</h4>
-                    <p id="alexanderBudget" class="text-3xl font-black text-team-alexander">$0</p>
-                    <ul id="alexanderExpensesList" class="mt-4 text-left text-sm text-gray-700 space-y-1"></ul>
-                </div>
-                <div class="bg-gray-100 rounded-lg p-4 shadow-inner">
-                    <h4 class="text-lg font-semibold text-[#0B2D48]">Chris's Budget</h4>
-                    <p id="chrisBudget" class="text-3xl font-black text-team-chris">$0</p>
-                    <ul id="chrisExpensesList" class="mt-4 text-left text-sm text-gray-700 space-y-1"></ul>
-                </div>
-                <div class="bg-gray-100 rounded-lg p-4 shadow-inner">
-                    <h4 class="text-lg font-semibold text-[#0B2D48]">MUST PAY Budget</h4>
-                    <p id="mustPayBudget" class="text-3xl font-black text-team-must-pay">$0</p>
-                    <ul id="mustPayExpensesList" class="mt-4 text-left text-sm text-gray-700 space-y-1"></ul>
-                </div>
-            </div>
-            <div class="mt-8 bg-gray-100 rounded-lg p-4 shadow-inner">
-                <h4 class="text-lg font-semibold text-[#0B2D48]">Total Assigned Budget</h4>
-                <p id="totalAssignedBudget" class="text-5xl font-black text-[#0B2D48]">$0</p>
-            </div>
+            <p class="mt-6 text-gray-600 text-center max-w-2xl mx-auto">
+                The **Production** allocation has been updated to reflect a more detailed breakdown, now totaling **$229,750**. Significant shares are also dedicated to Post-Production **(12.9%)** and Contingency **(11.9%)**, ensuring a polished final product and a safety net for unforeseen costs.
+            </p>
         </section>
 
-        <section class="bg-white rounded-lg shadow-md p-6 mb-12">
-            <h3 class="text-2xl font-bold mb-1 text-center">Phase-by-Phase Investment</h3>
-             <p class="text-gray-600 mb-8 text-center max-w-3xl mx-auto">Each production phase has a tailored budget to address its unique requirements, from initial creative development to the final marketing push. This granular approach ensures no critical area is underfunded.</p>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                    <h4 class="text-xl font-bold">Phase 1: Pre-Production ($6,000)</h4>
-                    <p class="text-gray-600 mb-4">Building the foundation. This stage is all about planning, writing, and casting to ensure a smooth production phase. The largest portion goes to script development and securing talent.</p>
-                    <div class="chart-container">
-                        <canvas id="preProductionChart"></canvas>
-                    </div>
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-xl shadow-xl p-6 md:p-10">
+                <h3 class="text-2xl font-bold mb-4">Pre-Production Breakdown</h3>
+                <p class="text-gray-600 mb-6">
+                    A total of **$42,000** is dedicated to laying the groundwork. The largest portions are allocated to Casting and Location Scouting, critical components for finding the right talent and securing compelling filming sites.
+                </p>
+                <div class="chart-container">
+                    <canvas id="preProductionChart"></canvas>
                 </div>
-                <div>
-                    <h4 class="text-xl font-bold">Phase 2: Production (<span id="remainingProductionTotal">$15,000</span>)</h4>
-                    <p class="text-gray-600 mb-4">Capturing the vision. This is where the story comes to life. The budget prioritizes high-quality cameras, equipment, and a skilled crew to deliver stunning visuals and crisp audio.</p>
-                    <div class="chart-container">
-                        <canvas id="productionChart"></canvas>
-                    </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl p-6 md:p-10">
+                <h3 class="text-2xl font-bold mb-4">Production Breakdown</h3>
+                <p class="text-gray-600 mb-6">
+                    With an updated total of **$229,750**, this is the core investment. Crew and Competitor Salaries represent the most significant costs, followed by Equipment Rental, ensuring the project is executed by skilled professionals with high-end tools.
+                </p>
+                <div class="chart-container">
+                    <canvas id="productionChart"></canvas>
                 </div>
-                <div>
-                    <h4 class="text-xl font-bold">Phase 3: Post-Production ($7,500)</h4>
-                    <p class="text-gray-600 mb-4">Polishing the final product. Editing is the most significant investment here, shaping the narrative, followed by essential sound design, color grading, and music to create a cinematic feel.</p>
-                    <div class="chart-container">
-                        <canvas id="postProductionChart"></canvas>
-                    </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl p-6 md:p-10">
+                <h3 class="text-2xl font-bold mb-4">Post-Production Breakdown</h3>
+                <p class="text-gray-600 mb-6">
+                    A budget of **$54,600** guarantees a high-quality final product. Editing and Sound Design are the top priorities, while Graphics and Color Grading ensure the show has a consistent, professional brand identity.
+                </p>
+                <div class="chart-container">
+                    <canvas id="postProductionChart"></canvas>
                 </div>
-                <div>
-                    <h4 class="text-xl font-bold">Phase 4: Marketing & Contingency ($1,500)</h4>
-                    <p class="text-gray-600 mb-4">Reaching the audience. A targeted budget for social media promotion to generate buzz, with a safety buffer included for any unexpected challenges during the project lifecycle.</p>
-                    <div class="chart-container">
-                        <canvas id="marketingChart"></canvas>
-                    </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl p-6 md:p-10">
+                <h3 class="text-2xl font-bold mb-4">Marketing & Distribution</h3>
+                <p class="text-gray-600 mb-6">
+                    An investment of **$33,600** is for maximizing audience reach. The majority of the budget is for Advertising Campaigns, with a healthy amount for Promotional Materials to create buzz.
+                </p>
+                <div class="chart-container">
+                    <canvas id="marketingChart"></canvas>
                 </div>
             </div>
         </section>
 
-        <section class="text-center mb-12">
-            <h3 class="text-2xl font-bold mb-1">Our Strategic Pillars</h3>
-            <p class="text-gray-600 mb-8 max-w-3xl mx-auto">This budget isn't just a list of expenses; it's a strategy built on three core principles to maximize the return on investment and ensure the project's success.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="text-4xl mb-2">🎬</div>
-                    <h4 class="text-xl font-bold">Prioritize Production Quality</h4>
-                    <p class="text-gray-600">By allocating half the budget to production, we commit to a high-quality look and feel that meets industry standards and captivates audiences.</p>
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h3 class="text-3xl font-bold text-center mb-6">Contingency & Investor Benefits</h3>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
+                A contingency fund of **$50,400** is crucial for mitigating risks. Additionally, a clear value proposition for investors includes extensive brand exposure and measurable ROI.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 rounded-lg bg-[#f9f5f1] border border-gray-200">
+                    <h4 class="text-xl font-semibold mb-2 text-[#5D6D93]">Contingency Fund</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Emergency repairs and replacements</li>
+                        <li>Unforeseen production delays</li>
+                        <li>Additional marketing opportunities</li>
+                        <li>Extra crew hiring needs</li>
+                        <li>Equipment failures or issues</li>
+                        <li>Last-minute travel changes</li>
+                        <li>Additional legal fees incurred</li>
+                        <li>Unexpected location changes</li>
+                        <li>Contingency for weather impacts</li>
+                    </ul>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="text-4xl mb-2">✨</div>
-                    <h4 class="text-xl font-bold">Ensure Professional Polish</h4>
-                    <p class="text-gray-600">A significant investment in post-production guarantees the teaser and pilot are broadcast-ready, showcasing the project's full potential.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="text-4xl mb-2">🚀</div>
-                    <h4 class="text-xl font-bold">Drive Investor Interest</h4>
-                    <p class="text-gray-600">Strategic spending on promotion is designed to attract the attention of investors and broadcasters, paving the way for a full series order.</p>
+                <div class="p-6 rounded-lg bg-[#f9f5f1] border border-gray-200">
+                    <h4 class="text-xl font-semibold mb-2 text-[#5D6D93]">Investor Benefits</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>**Brand Exposure:** Logo placement on clothing, equipment, and signage.</li>
+                        <li>**Product Placement:** In living quarters, challenges, and interviews.</li>
+                        <li>**Multi-Platform Reach:** Streaming and social channels.</li>
+                        <li>**Evergreen Content:** Reruns, online monetization, and future seasons.</li>
+                        <li>**ROI Tracking:** Post-broadcast audience and sponsor performance reports.</li>
+                    </ul>
                 </div>
             </div>
         </section>
         
     </main>
     
-    <footer class="bg-[#0B2D48] text-white p-6 text-center text-sm">
-        <p>Strategic Budget Plan for Teaser & Pilot Production. Total Budget: $30,000.</p>
+    <footer class="bg-[#2B2E4A] text-white p-6 text-center text-sm">
+        <p>Limit Edge - Budget Overview Presented by Alexander Aryanfar</p>
+        <p class="mt-1">Contact: alexander.aryanfar@gmail.com | @limitedgeshow | +1 (705) 970-0443</p>
     </footer>
 
     <script>
@@ -188,7 +160,7 @@
             }
             return lines;
         };
-        
+
         const tooltipTitleCallback = (tooltipItems) => {
             const item = tooltipItems[0];
             let label = item.chart.data.labels[item.dataIndex];
@@ -198,329 +170,175 @@
             return label;
         };
 
-        const chartColors = {
-            darkBlue: '#0B2D48',
-            mediumBlue: '#205375',
-            lightBlue: '#5D93B4',
-            accent: '#F6B60D',
-            lightGray: '#E0E0E0'
-        };
-        
-        const teamColors = {
-            'Alexander': '#3B82F6',
-            'Chris': '#10B981',
-            'Must Pay': '#EF4444'
-        };
-
-        const defaultChartOptions = {
+        const chartOptions = {
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
                 legend: {
                     position: 'bottom',
-                     labels: {
-                        color: chartColors.darkBlue,
+                    labels: {
+                        color: '#2B2E4A',
                         font: { size: 12 }
                     }
                 },
                 tooltip: {
                     callbacks: {
-                        title: tooltipTitleCallback
+                        title: tooltipTitleCallback,
+                        label: function(context) {
+                            let label = context.dataset.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.x !== undefined) {
+                                label += `$${context.parsed.x.toLocaleString()}`;
+                            } else if (context.parsed.y !== undefined) {
+                                label += `$${context.parsed.y.toLocaleString()}`;
+                            }
+                            return label;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        color: '#2B2E4A'
+                    }
+                },
+                y: {
+                    ticks: {
+                        color: '#2B2E4A'
                     }
                 }
             }
         };
 
-        const budgetData = {
-            'Pre-Production': {
-                'Concept Development & Script/Format Writing': 2000,
-                'Casting': 1500,
-                'Location Scouting & Permits': 1500,
-                'Production Planning': 1000
+        const palette = {
+            production: '#5D6D93',
+            postProduction: '#D86A36',
+            preProduction: '#E3B330',
+            marketing: '#39A57D',
+            contingency: '#9E9E9E',
+            text: '#2B2E4A'
+        };
+
+        new Chart(document.getElementById('mainAllocationChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Production', 'Post-Production', 'Pre-Production', 'Contingency & Misc.', 'Marketing & Distribution'],
+                datasets: [{
+                    label: 'Budget Allocation',
+                    data: [229750, 54600, 42000, 50400, 33600],
+                    backgroundColor: [
+                        palette.production,
+                        palette.postProduction,
+                        palette.preProduction,
+                        palette.contingency,
+                        palette.marketing,
+                    ],
+                    borderColor: '#fce8d5',
+                    borderWidth: 5,
+                    hoverOffset: 10
+                }]
             },
-            'Production': {
-                'Camera & Equipment Rental': 4500,
-                'Director & Cinematographer Fees': 3500,
-                'Crew Salaries': 3000,
-                'Set Design / Props': 2000,
-                'Transportation & Logistics': 1000,
-                'Food & Accommodation': 1000
-            },
-            'Post-Production': {
-                'Editing (Offline + Online)': 3000,
-                'Sound Design & Mixing': 1500,
-                'Music Licensing': 1000,
-                'Color Grading': 1000,
-                'Graphics & VFX': 1000
-            },
-            'Marketing & Contingency': {
-                'Teaser Promotion': 1000,
-                'Contingency Buffer': 500
-            }
-        };
-
-        let appState = {
-            selectedTeam: null,
-            alexander: { total: 0, expenses: [] },
-            chris: { total: 0, expenses: [] },
-            mustPay: { total: 0, expenses: [] },
-            assignedItems: new Set()
-        };
-
-        let charts = {};
-
-        const updateUI = () => {
-            document.getElementById('alexanderBudget').textContent = `$${appState.alexander.total}`;
-            document.getElementById('chrisBudget').textContent = `$${appState.chris.total}`;
-            document.getElementById('mustPayBudget').textContent = `$${appState.mustPay.total}`;
-            
-            const totalAssigned = appState.alexander.total + appState.chris.total + appState.mustPay.total;
-            document.getElementById('totalAssignedBudget').textContent = `$${totalAssigned}`;
-
-            const alexanderList = document.getElementById('alexanderExpensesList');
-            const chrisList = document.getElementById('chrisExpensesList');
-            const mustPayList = document.getElementById('mustPayExpensesList');
-
-            alexanderList.innerHTML = '';
-            appState.alexander.expenses.forEach(item => {
-                const li = document.createElement('li');
-                li.textContent = `${item.label}: $${item.value}`;
-                alexanderList.appendChild(li);
-            });
-
-            chrisList.innerHTML = '';
-            appState.chris.expenses.forEach(item => {
-                const li = document.createElement('li');
-                li.textContent = `${item.label}: $${item.value}`;
-                chrisList.appendChild(li);
-            });
-
-            mustPayList.innerHTML = '';
-            appState.mustPay.expenses.forEach(item => {
-                const li = document.createElement('li');
-                li.textContent = `${item.label}: $${item.value}`;
-                mustPayList.appendChild(li);
-            });
-        };
-
-        const renderCharts = () => {
-            Object.values(charts).forEach(chart => chart.destroy());
-            charts = {};
-            const initialColors = {};
-
-            initialColors['Pre-Production'] = Object.keys(budgetData['Pre-Production']).map(() => chartColors.accent);
-            initialColors['Production'] = Object.keys(budgetData['Production']).map(() => chartColors.mediumBlue);
-            initialColors['Post-Production'] = Object.keys(budgetData['Post-Production']).map(() => chartColors.lightBlue);
-            initialColors['Marketing & Contingency'] = [chartColors.lightGray, chartColors.darkBlue];
-
-            charts.mainAllocation = new Chart(document.getElementById('mainAllocationChart'), {
-                type: 'doughnut',
-                data: {
-                    labels: ['Production', 'Post-Production', 'Pre-Production', 'Marketing & Contingency'],
-                    datasets: [{
-                        label: 'Budget Allocation',
-                        data: [15000, 7500, 6000, 1500],
-                        backgroundColor: [
-                            chartColors.mediumBlue,
-                            chartColors.lightBlue,
-                            chartColors.accent,
-                            chartColors.lightGray
-                        ],
-                        borderColor: '#FFFFFF',
-                        borderWidth: 4
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                     cutout: '60%',
+            options: {
+                ...chartOptions,
+                cutout: '70%',
+                plugins: {
+                    ...chartOptions.plugins,
+                    tooltip: {
+                         callbacks: {
+                             ...chartOptions.plugins.tooltip.callbacks,
+                             label: function(context) {
+                                 const total = context.dataset.data.reduce((acc, curr) => acc + curr, 0);
+                                 const percentage = (context.parsed / total * 100).toFixed(1) + '%';
+                                 return `${context.label}: $${context.parsed.toLocaleString()} (${percentage})`;
+                             }
+                         }
+                     }
                 }
-            });
-
-            charts.preProduction = new Chart(document.getElementById('preProductionChart'), {
-                type: 'bar',
-                data: {
-                    labels: Object.keys(budgetData['Pre-Production']).map(l => wrapLabel(l)),
-                    datasets: [{
-                        label: 'Cost ($)',
-                        data: Object.values(budgetData['Pre-Production']),
-                        backgroundColor: initialColors['Pre-Production'],
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    indexAxis: 'y',
-                     plugins: {
-                        legend: { display: false },
-                        tooltip: { callbacks: { title: tooltipTitleCallback } }
-                    },
-                    scales: {
-                        x: {
-                            ticks: {
-                                callback: function(value) { return '$' + value / 1000 + 'k'; }
-                            }
-                        }
-                    },
-                    onClick: (event, elements) => handleChartClick(event, 'Pre-Production', charts.preProduction)
-                }
-            });
-            
-            charts.production = new Chart(document.getElementById('productionChart'), {
-                type: 'bar',
-                data: {
-                    labels: Object.keys(budgetData['Production']).map(l => wrapLabel(l)),
-                    datasets: [{
-                        label: 'Cost ($)',
-                        data: Object.values(budgetData['Production']),
-                        backgroundColor: initialColors['Production'],
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                     plugins: {
-                        legend: { display: false },
-                        tooltip: { callbacks: { title: tooltipTitleCallback } }
-                    },
-                    scales: {
-                        y: {
-                            ticks: {
-                                callback: function(value) { return '$' + value / 1000 + 'k'; }
-                            }
-                        }
-                    },
-                    onClick: (event, elements) => handleChartClick(event, 'Production', charts.production)
-                }
-            });
-
-            charts.postProduction = new Chart(document.getElementById('postProductionChart'), {
-                type: 'bar',
-                data: {
-                    labels: Object.keys(budgetData['Post-Production']).map(l => wrapLabel(l)),
-                    datasets: [{
-                        label: 'Cost ($)',
-                        data: Object.values(budgetData['Post-Production']),
-                        backgroundColor: initialColors['Post-Production'],
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    indexAxis: 'y',
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: { callbacks: { title: tooltipTitleCallback } }
-                    },
-                    scales: {
-                        x: {
-                            ticks: {
-                                callback: function(value) { return '$' + value / 1000 + 'k'; }
-                            }
-                        }
-                    },
-                    onClick: (event, elements) => handleChartClick(event, 'Post-Production', charts.postProduction)
-                }
-            });
-
-            charts.marketing = new Chart(document.getElementById('marketingChart'), {
-                type: 'bar',
-                data: {
-                    labels: Object.keys(budgetData['Marketing & Contingency']).map(l => wrapLabel(l)),
-                    datasets: [{
-                        label: 'Cost ($)',
-                        data: Object.values(budgetData['Marketing & Contingency']),
-                        backgroundColor: initialColors['Marketing & Contingency'],
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: { callbacks: { title: tooltipTitleCallback } }
-                    },
-                    scales: {
-                        y: {
-                            ticks: {
-                               callback: function(value) { return '$' + value; }
-                            }
-                        }
-                    },
-                    onClick: (event, elements) => handleChartClick(event, 'Marketing & Contingency', charts.marketing)
-                }
-            });
-        };
-
-        const handleChartClick = (event, phase, chart) => {
-            const activeElements = chart.getElementsAtEventForMode(event, 'nearest', 'intersect', true);
-            if (!activeElements || activeElements.length === 0) {
-                return;
             }
-
-            if (!appState.selectedTeam) {
-                document.getElementById('statusMessage').textContent = 'Please select a team first (Alexander, Chris or MUST PAY).';
-                setTimeout(() => document.getElementById('statusMessage').textContent = '', 3000);
-                return;
-            }
-
-            const elementIndex = activeElements[0].index;
-            const originalLabels = Object.keys(budgetData[phase]);
-            const label = originalLabels[elementIndex];
-            const value = chart.data.datasets[0].data[elementIndex];
-
-            if (appState.assignedItems.has(label)) {
-                return;
-            }
-
-            appState.assignedItems.add(label);
-            
-            const item = { label: label, value: value };
-
-            if (appState.selectedTeam === 'Alexander') {
-                appState.alexander.total += value;
-                appState.alexander.expenses.push(item);
-            } else if (appState.selectedTeam === 'Chris') {
-                appState.chris.total += value;
-                appState.chris.expenses.push(item);
-            } else if (appState.selectedTeam === 'Must Pay') {
-                appState.mustPay.total += value;
-                appState.mustPay.expenses.push(item);
-            }
-
-            const teamColor = teamColors[appState.selectedTeam];
-            chart.data.datasets[0].backgroundColor[elementIndex] = teamColor;
-
-            updateUI();
-            chart.update();
-        };
-
-        const clearButtonActiveClass = () => {
-            document.getElementById('alexanderBtn').classList.remove('active');
-            document.getElementById('chrisBtn').classList.remove('active');
-            document.getElementById('mustPayBtn').classList.remove('active');
-        };
-
-        document.getElementById('alexanderBtn').addEventListener('click', () => {
-            appState.selectedTeam = 'Alexander';
-            clearButtonActiveClass();
-            document.getElementById('alexanderBtn').classList.add('active');
-            document.getElementById('statusMessage').textContent = '';
         });
 
-        document.getElementById('chrisBtn').addEventListener('click', () => {
-            appState.selectedTeam = 'Chris';
-            clearButtonActiveClass();
-            document.getElementById('chrisBtn').classList.add('active');
-            document.getElementById('statusMessage').textContent = '';
+        new Chart(document.getElementById('preProductionChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Casting & Recruitment', 'Location Scouting', 'Concept Development', 'Travel (Initial)', 'Legal & Permits'].map(l => wrapLabel(l)),
+                datasets: [{
+                    label: 'Budget ($)',
+                    data: [12000, 9000, 8000, 7000, 6000],
+                    backgroundColor: palette.preProduction,
+                }]
+            },
+            options: {
+                ...chartOptions,
+                indexAxis: 'y',
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                }
+            }
         });
 
-        document.getElementById('mustPayBtn').addEventListener('click', () => {
-            appState.selectedTeam = 'Must Pay';
-            clearButtonActiveClass();
-            document.getElementById('mustPayBtn').classList.add('active');
-            document.getElementById('statusMessage').textContent = '';
+        new Chart(document.getElementById('productionChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Crew Salaries', 'Competitor Fees', 'Host Fees', 'Accommodation', 'Equipment Rental/Purchase', 'Transportation', 'Catering & Food', 'Wardrobe & Branding', 'Insurance & Permits', 'Misc. On-Site Costs'].map(l => wrapLabel(l)),
+                datasets: [{
+                    label: 'Budget ($)',
+                    data: [57000, 29000, 28650, 28000, 23100, 15500, 15500, 10000, 7000, 6000],
+                    backgroundColor: palette.production,
+                }]
+            },
+            options: {
+                ...chartOptions,
+                indexAxis: 'y',
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                }
+            }
         });
 
-        window.onload = () => {
-            renderCharts();
-            updateUI();
-        };
+        new Chart(document.getElementById('postProductionChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Editing', 'Sound Design & Mixing', 'Color Grading', 'Graphics & Animation', 'Music Licensing'].map(l => wrapLabel(l)),
+                datasets: [{
+                    label: 'Budget ($)',
+                    data: [18000, 12000, 9000, 7800, 7800],
+                    backgroundColor: palette.postProduction,
+                }]
+            },
+            options: {
+                ...chartOptions,
+                indexAxis: 'y',
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('marketingChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Advertising Campaigns', 'Promotional Materials', 'Premiere Event', 'Distribution Fees'].map(l => wrapLabel(l)),
+                datasets: [{
+                    label: 'Budget ($)',
+                    data: [14400, 9600, 4800, 4800],
+                    backgroundColor: palette.marketing,
+                }]
+            },
+            options: {
+                ...chartOptions,
+                indexAxis: 'y',
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                }
+            }
+        });
     </script>
 </body>
 </html>

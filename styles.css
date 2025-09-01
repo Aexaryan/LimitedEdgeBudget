@@ -1,23 +1,22 @@
-/* Teaser & Pilot Budget Infographic Styles */
+/* Limit Edge Budget Overview Styles */
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #F5F5F5;
+    background-color: #fce8d5;
 }
 
 .chart-container {
     position: relative;
     width: 100%;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
+    margin: 0 auto;
+    height: 350px;
     max-height: 400px;
 }
 
 @media (min-width: 768px) {
     .chart-container {
-        height: 350px;
+        height: 400px;
     }
 }
 
