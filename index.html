@@ -67,6 +67,26 @@
             const menu = document.getElementById('navMenu');
             menu.classList.toggle('active');
         }
+        
+        // Fallback styles in case CSS doesn't load properly
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('.professional-nav');
+            if (nav) {
+                nav.style.background = 'linear-gradient(135deg, #2B2E4A 0%, #1a1d2e 100%)';
+                nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+                nav.style.position = 'sticky';
+                nav.style.top = '0';
+                nav.style.zIndex = '1000';
+                nav.style.width = '100%';
+            }
+            
+            const navMenu = document.querySelector('.nav-menu');
+            if (navMenu) {
+                navMenu.style.display = 'flex';
+                navMenu.style.alignItems = 'center';
+                navMenu.style.gap = '0.5rem';
+            }
+        });
     </script>
 
     <header class="bg-[#2B2E4A] text-white p-8 text-center shadow-lg">
