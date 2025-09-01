@@ -1,0 +1,38 @@
+/* Teaser & Pilot Budget Infographic Styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F5F5;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-height: 400px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 350px;
+    }
+}
+
+.team-button.active {
+    @apply border-2 border-blue-500 ring-2 ring-blue-500;
+}
+
+.text-team-alexander { 
+    color: #3B82F6; 
+}
+
+.text-team-chris { 
+    color: #10B981; 
+}
+
+.text-team-must-pay { 
+    color: #EF4444; 
+}
