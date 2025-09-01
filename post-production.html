@@ -13,24 +13,62 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- Navigation -->
-    <nav class="bg-[#D86A36] text-white p-4 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-xl font-bold">Limit Edge Reality Show</div>
-            <div class="space-x-4">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="budget-overview.html" class="nav-link">Budget Overview</a>
-                <a href="presentation-slides.html" class="nav-link">Presentation Slides</a>
-                <a href="pre-production.html" class="nav-link">Pre-Production</a>
-                <a href="production.html" class="nav-link">Production</a>
-                <a href="post-production.html" class="nav-link active">Post-Production</a>
-                <a href="marketing.html" class="nav-link">Marketing</a>
-                <a href="contingency.html" class="nav-link">Contingency</a>
-                <a href="investor-benefits.html" class="nav-link">Investor Benefits</a>
-                <a href="teaser-pilot.html" class="nav-link">Teaser & Pilot</a>
+    <!-- Professional Navigation -->
+    <nav class="professional-nav text-white p-4">
+        <div class="nav-container flex justify-between items-center">
+            <a href="index.html" class="nav-brand">
+                <img src="logo.jpg" alt="Limit Edge Logo" class="h-8 w-auto mr-3">
+                Limit Edge Reality Show
+            </a>
+            
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link-pro home-link">Home</a>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <div class="nav-link-pro dropdown-toggle active">
+                        Budget
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">Budget Management</div>
+                        <a href="budget-overview.html" class="dropdown-item">Overview</a>
+                        <a href="pre-production.html" class="dropdown-item">Pre-Production</a>
+                        <a href="production.html" class="dropdown-item">Production</a>
+                        <a href="post-production.html" class="dropdown-item">Post-Production</a>
+                        <a href="marketing.html" class="dropdown-item">Marketing</a>
+                        <a href="contingency.html" class="dropdown-item">Contingency</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <div class="nav-link-pro dropdown-toggle">
+                        Business
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">Business & Investment</div>
+                        <a href="investor-benefits.html" class="dropdown-item">Investor Benefits</a>
+                        <a href="teaser-pilot.html" class="dropdown-item">Teaser & Pilot</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="presentation-slides.html" class="nav-link-pro">Presentation</a>
+                </div>
             </div>
         </div>
     </nav>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
 
     <header class="bg-[#D86A36] text-white p-8 text-center shadow-lg">
         <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight">POST-PRODUCTION</h1>
