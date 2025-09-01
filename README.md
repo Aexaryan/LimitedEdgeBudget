@@ -4,6 +4,7 @@ A comprehensive, interactive budget visualization tool for film and television p
 
 ## 🎬 Features
 
+### Budget Overview Page
 - **Interactive Budget Visualization**: Dynamic charts showing budget allocation across production phases
 - **Team Expense Tracker**: Assign budget items to different team members (Alexander, Chris, Must Pay)
 - **Phase-by-Phase Breakdown**: Detailed budget distribution across:
@@ -11,8 +12,18 @@ A comprehensive, interactive budget visualization tool for film and television p
   - Production ($15,000)
   - Post-Production ($7,500)
   - Marketing & Contingency ($1,500)
-- **Responsive Design**: Optimized for desktop and mobile viewing
 - **Real-time Updates**: Live tracking of assigned expenses and remaining budget
+
+### Project Details Page
+- **Visual Timeline**: Interactive timeline showing 12-week production schedule
+- **Team Structure**: Detailed team roles and responsibilities
+- **Risk Management**: Comprehensive risk assessment and mitigation strategies
+- **Success Metrics**: Key performance indicators and project targets
+
+### General Features
+- **Responsive Design**: Optimized for desktop and mobile viewing
+- **Navigation System**: Seamless navigation between pages
+- **Consistent Branding**: Professional design across all pages
 
 ## 🚀 Live Demo
 
@@ -41,12 +52,24 @@ Simply open `index.html` in your web browser to view the interactive budget info
 
 ## 📱 Usage
 
+### Budget Overview Page (`index.html`)
 1. **View Budget Overview**: The main page displays the total $30,000 budget with high-level allocation
 2. **Explore Phase Details**: Scroll down to see detailed breakdowns for each production phase
 3. **Track Team Expenses**: 
    - Select a team member (Alexander, Chris, or Must Pay)
    - Click on any budget item in the charts to assign it
    - Monitor real-time budget tracking and remaining allocations
+
+### Project Details Page (`project-details.html`)
+1. **Project Overview**: Goals, key metrics, and strategic objectives
+2. **Production Timeline**: Visual timeline showing all 4 phases over 12 weeks
+3. **Team Structure**: Detailed breakdown of team roles and responsibilities
+4. **Risk Management**: Identified risks and mitigation strategies
+5. **Success Metrics**: Key performance indicators and targets
+
+### Navigation
+- Use the navigation bar at the top to switch between pages
+- Both pages maintain consistent styling and branding
 
 ## 🎨 Design Features
 
@@ -60,10 +83,11 @@ Simply open `index.html` in your web browser to view the interactive budget info
 
 ```
 LimitEdgeBuget/
-├── index.html          # Main application file
-├── styles.css          # Custom CSS styles
-├── README.md           # Project documentation
-└── .gitignore          # Git ignore rules
+├── index.html              # Budget overview page with interactive charts
+├── project-details.html    # Project details, timeline, and team information
+├── styles.css              # Custom CSS styles for both pages
+├── README.md               # Project documentation
+└── .gitignore              # Git ignore rules
 ```
 
 ## 🔧 Customization
