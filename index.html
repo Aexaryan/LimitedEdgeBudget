@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limit Edge - Budget Overview</title>
+    <title>Limit Edge - Program Presentation</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
@@ -14,12 +13,12 @@
 <body class="text-gray-800">
 
     <!-- Navigation -->
-    <nav class="bg-[#D86A36] text-white p-4 shadow-lg">
+    <nav class="bg-[#2B2E4A] text-white p-4 shadow-lg">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-xl font-bold">Limit Edge Reality Show</div>
             <div class="space-x-4">
-                <a href="index.html" class="nav-link active">Overview</a>
-                <a href="program-presentation.html" class="nav-link">Program Presentation</a>
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="budget-overview.html" class="nav-link">Budget Overview</a>
                 <a href="presentation-slides.html" class="nav-link">Presentation Slides</a>
                 <a href="pre-production.html" class="nav-link">Pre-Production</a>
                 <a href="production.html" class="nav-link">Production</a>
@@ -31,10 +30,10 @@
         </div>
     </nav>
 
-    <header class="bg-[#D86A36] text-white p-8 text-center shadow-lg">
+    <header class="bg-[#2B2E4A] text-white p-8 text-center shadow-lg">
         <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight">LIMIT EDGE</h1>
         <p class="mt-2 text-xl font-bold">PERSIAN SPORTS REALITY SHOW</p>
-        <p class="mt-4 text-lg text-white">Complete Budget Breakdown</p>
+        <p class="mt-4 text-lg text-white">Where Champions Are Made</p>
     </header>
 
     <!-- Hero Image Section -->
@@ -55,202 +54,369 @@
 
     <main class="container mx-auto p-4 md:p-8">
 
-        <section class="text-center my-12">
-            <h2 class="text-6xl md:text-7xl font-black text-[#5D6D93] tracking-tighter my-4">$372,600</h2>
-            <p class="max-w-4xl mx-auto text-gray-600 text-lg">
-                This comprehensive budget breakdown for the "Limit Edge" reality show allocates a total of **$372,600** across all production phases. The strategy prioritizes high-quality production while ensuring adequate funding for pre-production planning, post-production polish, marketing reach, and essential contingency planning.
-            </p>
-        </section>
-
+        <!-- Program Summary -->
         <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
-            <h3 class="text-3xl font-bold text-center mb-6">Overall Budget Allocation</h3>
-            <div class="chart-container h-[450px]">
-                    <canvas id="mainAllocationChart"></canvas>
-            </div>
-            <p class="mt-6 text-gray-600 text-center max-w-2xl mx-auto">
-                The **Production** phase receives the largest allocation at **51.26%** ($191,000), ensuring high-quality filming operations. Significant investments are also made in **Post-Production** (14.65%) and **Contingency** (13.53%) to guarantee a polished final product and risk mitigation.
-            </p>
-        </section>
-
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow">
-                <div class="text-center">
-                    <div class="text-4xl font-black text-[#E3B330] mb-2">$33,000</div>
-                    <h4 class="text-xl font-bold text-[#5D6D93] mb-3">Pre-Production</h4>
-                    <p class="text-sm text-gray-600 mb-4">8.86% of total budget</p>
-                    <p class="text-gray-700 text-sm mb-4">Casting, permits, obstacle design, location scouting, and initial planning.</p>
-                    <a href="pre-production.html" class="inline-block bg-[#E3B330] text-white px-4 py-2 rounded-lg hover:bg-[#D4A02A] transition-colors">View Details</a>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow">
-                <div class="text-center">
-                    <div class="text-4xl font-black text-[#5D6D93] mb-2">$191,000</div>
-                    <h4 class="text-xl font-bold text-[#5D6D93] mb-3">Production</h4>
-                    <p class="text-sm text-gray-600 mb-4">51.26% of total budget</p>
-                    <p class="text-gray-700 text-sm mb-4">Full filming operations: crew, cast, equipment, transport, lodging, catering.</p>
-                    <a href="production.html" class="inline-block bg-[#5D6D93] text-white px-4 py-2 rounded-lg hover:bg-[#4A5A7A] transition-colors">View Details</a>
-                </div>
-                </div>
-
-            <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow">
-                <div class="text-center">
-                    <div class="text-4xl font-black text-[#D86A36] mb-2">$54,600</div>
-                    <h4 class="text-xl font-bold text-[#5D6D93] mb-3">Post-Production</h4>
-                    <p class="text-sm text-gray-600 mb-4">14.65% of total budget</p>
-                    <p class="text-gray-700 text-sm mb-4">Editing, sound mixing, visual effects, color grading, motion graphics.</p>
-                    <a href="post-production.html" class="inline-block bg-[#D86A36] text-white px-4 py-2 rounded-lg hover:bg-[#C55A2A] transition-colors">View Details</a>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow">
-                <div class="text-center">
-                    <div class="text-4xl font-black text-[#39A57D] mb-2">$33,600</div>
-                    <h4 class="text-xl font-bold text-[#5D6D93] mb-3">Marketing & Distribution</h4>
-                    <p class="text-sm text-gray-600 mb-4">9.02% of total budget</p>
-                    <p class="text-gray-700 text-sm mb-4">Media buys, PR campaigns, trailer production, social promotion.</p>
-                    <a href="marketing.html" class="inline-block bg-[#39A57D] text-white px-4 py-2 rounded-lg hover:bg-[#2E8B5F] transition-colors">View Details</a>
-                </div>
-                </div>
-
-            <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow">
-                <div class="text-center">
-                    <div class="text-4xl font-black text-[#9E9E9E] mb-2">$50,400</div>
-                    <h4 class="text-xl font-bold text-[#5D6D93] mb-3">Contingency & Misc.</h4>
-                    <p class="text-sm text-gray-600 mb-4">13.53% of total budget</p>
-                    <p class="text-gray-700 text-sm mb-4">Insurance, legal, and unexpected costs to ensure project completion.</p>
-                    <a href="contingency.html" class="inline-block bg-[#9E9E9E] text-white px-4 py-2 rounded-lg hover:bg-[#7A7A7A] transition-colors">View Details</a>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow">
-                <div class="text-center">
-                    <div class="text-4xl font-black text-[#FF6B6B] mb-2">$10,000</div>
-                    <h4 class="text-xl font-bold text-[#5D6D93] mb-3">Prize Fund</h4>
-                    <p class="text-sm text-gray-600 mb-4">2.68% of total budget</p>
-                    <p class="text-gray-700 text-sm mb-4">Winner's prize money to incentivize competition and engagement.</p>
-                    <div class="inline-block bg-[#FF6B6B] text-white px-4 py-2 rounded-lg">Prize Fund</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
-            <h3 class="text-3xl font-bold text-center mb-6">Budget Summary</h3>
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Program Summary</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h4 class="text-xl font-semibold mb-4 text-[#5D6D93]">Key Investment Areas</h4>
+                    <img src="limit-edge-hero.jpg" 
+                         alt="Athletes competing in sports challenges" 
+                         class="w-full h-64 object-cover rounded-lg mb-6">
+                    <p class="text-lg text-gray-700 mb-6">
+                        <strong>"Limit Edge"</strong> is a Persian-language sports reality show featuring 10 male and female athletes, randomly paired in teams, competing daily in endurance, speed, and strength challenges.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        With dynamic visuals, emotional depth, and natural environments, it's designed to match international TV standards and captivate Persian-speaking audiences worldwide.
+                    </p>
+                </div>
+                <div class="bg-[#f9f5f1] p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Key Details</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><strong>Language:</strong> Persian</li>
+                        <li><strong>Contestants:</strong> 10 professional/semi-professional athletes (5 men, 5 women)</li>
+                        <li><strong>Structure:</strong> Daily team challenges + individual point scoring</li>
+                        <li><strong>Locations:</strong> 4000 m² indoor gym + nature (beach, forest)</li>
+                        <li><strong>Episodes:</strong> 7 (each shot over one full day)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Host Information -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Host & Mentor</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <img src="reza-madadi.jpg" 
+                         alt="Reza Madadi - MMA World Champion" 
+                         class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4 text-[#2B2E4A]">Reza Madadi</h3>
+                    <p class="text-lg font-semibold text-[#D86A36] mb-4">MMA World Champion & globally known Iranian athlete</p>
                     <ul class="space-y-3 text-gray-700">
-                        <li class="flex justify-between">
-                            <span>Production Operations</span>
-                            <span class="font-bold">$191,000 (51.26%)</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span>Post-Production Polish</span>
-                            <span class="font-bold">$54,600 (14.65%)</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span>Contingency & Safety</span>
-                            <span class="font-bold">$50,400 (13.53%)</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span>Pre-Production Planning</span>
-                            <span class="font-bold">$33,000 (8.86%)</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span>Marketing & Distribution</span>
-                            <span class="font-bold">$33,600 (9.02%)</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span>Prize Fund</span>
-                            <span class="font-bold">$10,000 (2.68%)</span>
-                        </li>
+                        <li>• Charismatic, motivational, and relatable</li>
+                        <li>• Expert in physical and mental endurance</li>
+                        <li>• Strong youth connection</li>
+                        <li>• <strong>Role:</strong> Host, mentor, judge, emotional anchor</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Episode Structure -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Daily Episode Structure</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-[#f9f5f1] rounded-lg">
+                    <img src="endurance-challenge.jpg" 
+                         alt="Endurance Challenge" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-3 text-[#2B2E4A]">01 Endurance Challenge</h3>
+                    <p class="text-gray-700">Contestants push their physical and mental limits in long, grueling tests that demand stamina, focus, and willpower.</p>
+                </div>
+                <div class="text-center p-6 bg-[#f9f5f1] rounded-lg">
+                    <img src="speed-challenge.jpg" 
+                         alt="Speed Challenge" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-3 text-[#2B2E4A]">02 Speed Challenge</h3>
+                    <p class="text-gray-700">Explosive bursts of energy and razor-sharp reflexes determine the winner in fast-paced, time-critical competitions.</p>
+                </div>
+                <div class="text-center p-6 bg-[#f9f5f1] rounded-lg">
+                    <img src="strength-challenge.jpg" 
+                         alt="Strength Challenge" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-3 text-[#2B2E4A]">03 Strength Challenge</h3>
+                    <p class="text-gray-700">Raw power meets technique as athletes face heavy lifts, resistance battles, and strength-based obstacles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenge Diversity & Locations -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Challenge Diversity & Locations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <img src="indoor-gym.jpg" 
+                         alt="Indoor Gym Facility" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Indoor Gym</h3>
+                    <p class="text-gray-700 mb-4">Controlled, high-tech environment for strength and precision tasks.</p>
+                </div>
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <img src="natural-environment.jpg" 
+                         alt="Natural Environment Challenges" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Natural Environments</h3>
+                    <p class="text-gray-700 mb-4">Unpredictable settings (beach, forest, night) for endurance and adaptability.</p>
+                </div>
+            </div>
+            <div class="mt-6 p-4 bg-[#e8f4f8] rounded-lg text-center">
+                <p class="text-gray-700"><strong>All challenges follow safety standards and are cinematic in style.</strong></p>
+            </div>
+        </section>
+
+        <!-- Dramatic Appeal & Emotional Hooks -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Dramatic Appeal & Emotional Hooks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <img src="limit-edge-hero.jpg" 
+                         alt="Team Dynamics" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Team Dynamics</h3>
+                    <p class="text-gray-700 mb-4">Random pairings create tension, alliances, and arcs.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">High Stakes</h3>
+                    <p class="text-gray-700 mb-4">Night and psychological challenges raise emotional intensity.</p>
+                </div>
+                <div>
+                    <img src="limit-edge-hero.jpg" 
+                         alt="Personal Stories" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Personal Stories</h3>
+                    <p class="text-gray-700 mb-4">Confessionals reveal ambition, conflict, and exhaustion.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Cinematic Feel</h3>
+                    <p class="text-gray-700 mb-4">Dramatic lighting and original soundtrack.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production Timeline -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Production Timeline</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-4 bg-[#f9f5f1] rounded-lg text-center">
+                    <h4 class="font-bold text-[#2B2E4A]">Format Development</h4>
+                    <p class="text-gray-600">10 days</p>
+                </div>
+                <div class="p-4 bg-[#f9f5f1] rounded-lg text-center">
+                    <h4 class="font-bold text-[#2B2E4A]">Sponsorship & Registration</h4>
+                    <p class="text-gray-600">2 weeks</p>
+                </div>
+                <div class="p-4 bg-[#f9f5f1] rounded-lg text-center">
+                    <h4 class="font-bold text-[#2B2E4A]">Final Contestant Selection</h4>
+                    <p class="text-gray-600">7 days</p>
+                </div>
+                <div class="p-4 bg-[#f9f5f1] rounded-lg text-center">
+                    <h4 class="font-bold text-[#2B2E4A]">Location Setup</h4>
+                    <p class="text-gray-600">7 days</p>
+                </div>
+                <div class="p-4 bg-[#f9f5f1] rounded-lg text-center">
+                    <h4 class="font-bold text-[#2B2E4A]">Filming</h4>
+                    <p class="text-gray-600">7 days (+2 buffer)</p>
+                </div>
+                <div class="p-4 bg-[#f9f5f1] rounded-lg text-center">
+                    <h4 class="font-bold text-[#2B2E4A]">Post-Production</h4>
+                    <p class="text-gray-600">14 days</p>
+                </div>
+            </div>
+            <div class="mt-6 p-4 bg-[#e8f4f8] rounded-lg text-center">
+                <p class="text-gray-700"><strong>First episode release – ~6 weeks from start format development</strong></p>
+            </div>
+        </section>
+
+        <!-- Facilities & Production Crew -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Facilities & Production Crew</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <img src="indoor-gym.jpg" 
+                         alt="Production Facilities" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Facilities & Equipment</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Gym</li>
+                        <li>• Nature filming sites</li>
+                        <li>• On-site accommodation</li>
+                        <li>• Cameras, drones, lighting rigs</li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-xl font-semibold mb-4 text-[#5D6D93]">Strategic Focus</h4>
-                    <div class="space-y-4">
-                        <div class="p-4 bg-[#f9f5f1] rounded-lg">
-                            <h5 class="font-semibold text-[#5D6D93]">Quality Production</h5>
-                            <p class="text-sm text-gray-600">Over 50% of budget dedicated to ensuring high-quality filming operations</p>
+                    <img src="natural-environment.jpg" 
+                         alt="Production Crew" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Core Team</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Director & Technical Director</li>
+                        <li>• Trainers, Cinematographers, Sounds, Psychologist, Medic</li>
+                        <li>• Editors & Motion Graphics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience & Viewer Engagement -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Target Audience & Viewer Engagement</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <img src="limit-edge-hero.jpg" 
+                         alt="Target Audience" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Core Demographic</h3>
+                    <p class="text-gray-700 mb-4">Ages 18–40, fitness/sports fans</p>
+                    
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Themes</h3>
+                    <p class="text-gray-700 mb-4">Human capacity, mental pressure, resilience</p>
+                </div>
+                <div>
+                    <img src="natural-environment.jpg" 
+                         alt="Distribution Channels" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Distribution</h3>
+                    <p class="text-gray-700 mb-4">Filimo, Namava, satellite TV</p>
+                    
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Future</h3>
+                    <p class="text-gray-700 mb-4">VIP versions, spin-offs, international franchises</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overall Budget Breakdown -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Overall Budget Breakdown ($350,000)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Pre-Production</h3>
+                    <p class="text-2xl font-black text-[#E3B330] mb-2">$35,000 (10%)</p>
+                    <p class="text-gray-700 text-sm">Casting, permits, obstacle design, location scouting.</p>
+                </div>
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Production</h3>
+                    <p class="text-2xl font-black text-[#5D6D93] mb-2">$192,500 (55%)</p>
+                    <p class="text-gray-700 text-sm">Full filming operations: crew, cast, equipment, transport, lodging, catering.</p>
+                </div>
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Post-Production</h3>
+                    <p class="text-2xl font-black text-[#D86A36] mb-2">$52,500 (15%)</p>
+                    <p class="text-gray-700 text-sm">Editing, sound mixing, visual effects, color grading, motion graphics.</p>
+                </div>
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Marketing & Distribution</h3>
+                    <p class="text-2xl font-black text-[#39A57D] mb-2">$35,000 (10%)</p>
+                    <p class="text-gray-700 text-sm">Media buys, PR campaigns, trailer production, social promotion.</p>
+                </div>
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Contingency & Misc.</h3>
+                    <p class="text-2xl font-black text-[#9E9E9E] mb-2">$35,000 (10%)</p>
+                    <p class="text-gray-700 text-sm">Insurance, legal, and unexpected costs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsorship Opportunities -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Sponsorship Opportunities</h2>
+            <div class="text-center">
+                <img src="limit-edge-hero.jpg" 
+                     alt="Sponsorship Opportunities" 
+                     class="w-full h-64 object-cover rounded-lg mb-6">
+                <p class="text-lg text-gray-700 mb-6">Ideal for supplement brands, activewear, fitness tech/apps</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Branding Opportunities</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• Branding on clothing, equipment, challenges</li>
+                            <li>• Product placement in contestant living areas</li>
+                            <li>• Sponsor performance reports post-air</li>
+                        </ul>
                     </div>
-                        <div class="p-4 bg-[#f9f5f1] rounded-lg">
-                            <h5 class="font-semibold text-[#5D6D93]">Risk Management</h5>
-                            <p class="text-sm text-gray-600">13.53% contingency fund for unexpected costs and delays</p>
                 </div>
-                        <div class="p-4 bg-[#f9f5f1] rounded-lg">
-                            <h5 class="font-semibold text-[#5D6D93]">Market Reach</h5>
-                            <p class="text-sm text-gray-600">Comprehensive marketing strategy to maximize audience engagement</p>
+            </div>
+        </section>
+
+        <!-- Team Expertise -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Proven Expertise in Film & TV Production</h2>
+            <div class="text-center mb-8">
+                <p class="text-lg text-gray-700">We are a team of three professionals, each holding a Bachelor's degree in Cinema, with extensive experience across the film and television industry.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-[#f9f5f1] rounded-lg">
+                    <img src="reza-madadi.jpg" 
+                         alt="Alexander Aryanfar" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Alexander Aryanfar</h3>
+                    <p class="text-[#D86A36] font-semibold">Producer</p>
                 </div>
-                    </div>
+                <div class="text-center p-6 bg-[#f9f5f1] rounded-lg">
+                    <img src="reza-madadi.jpg" 
+                         alt="Mehdi Razi" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Mehdi Razi</h3>
+                    <p class="text-[#D86A36] font-semibold">Director</p>
                 </div>
+                <div class="text-center p-6 bg-[#f9f5f1] rounded-lg">
+                    <img src="reza-madadi.jpg" 
+                         alt="Hamed Aryanfar" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Hamed Aryanfar</h3>
+                    <p class="text-[#D86A36] font-semibold">Script Writer</p>
+                </div>
+            </div>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Strong Background in Media Production</h3>
+                    <p class="text-gray-700">Participated in numerous movie and TV productions, covering a range of genres and formats.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Proven Track Record</h3>
+                    <p class="text-gray-700">Successfully managed complex projects with over 15 actors, navigating logistical, creative, and technical challenges.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">Diverse Creative Skills</h3>
+                    <p class="text-gray-700">Expertise spanning Directing, Cinematography, Scriptwriting, and Production Management.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#2B2E4A]">High-Quality Output</h3>
+                    <p class="text-gray-700">Our combined experience ensures the ability to develop, execute, and deliver world-class, high-quality media productions that meet international standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#2B2E4A]">Let's Collaborate</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <div class="text-4xl mb-3">📞</div>
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Phone</h3>
+                    <p class="text-gray-700">+1 (705) 970-0443</p>
+                </div>
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <div class="text-4xl mb-3">🌐</div>
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Website</h3>
+                    <p class="text-gray-700">www.limitedgeshow.com</p>
+                </div>
+                <div class="p-6 bg-[#f9f5f1] rounded-lg">
+                    <div class="text-4xl mb-3">📧</div>
+                    <h3 class="text-xl font-bold mb-2 text-[#2B2E4A]">Email</h3>
+                    <p class="text-gray-700">alexander.aryanfar@gmail.com</p>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-lg text-gray-700"><strong>Toronto, Canada</strong></p>
+            </div>
+        </section>
+
+        <!-- Legal Notice -->
+        <section class="bg-red-50 border-2 border-red-200 rounded-xl p-6 md:p-10 mb-12">
+            <h2 class="text-2xl font-bold text-center mb-6 text-red-800">LEGAL NOTICE!</h2>
+            <div class="text-gray-700 space-y-4">
+                <p>This concept, content, and all related materials are the intellectual property of <strong>Alexander Aryanfar</strong> and are protected under international copyright laws.</p>
+                <p><strong>All rights are reserved.</strong> Any reproduction, distribution, or use without prior written consent is strictly prohibited.</p>
+                <p>By receiving, viewing, or discussing this material in any form (verbally or in writing), the recipient acknowledges and agrees to be bound by a <strong>Non-Disclosure Agreement (NDA)</strong>, whether signed or implied, and commits to maintaining the confidentiality of all proprietary information contained herein.</p>
             </div>
         </section>
         
     </main>
     
     <footer class="bg-[#2B2E4A] text-white p-6 text-center text-sm">
-        <p>Limit Edge - Budget Overview Presented by Alexander Aryanfar</p>
+        <p>Limit Edge - Program Presentation | Alexander Aryanfar</p>
         <p class="mt-1">Contact: alexander.aryanfar@gmail.com | @limitedgeshow | +1 (705) 970-0443</p>
     </footer>
 
-    <script>
-        const chartOptions = {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                     labels: {
-                        color: '#2B2E4A',
-                        font: { size: 12 }
-                    }
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            const total = context.dataset.data.reduce((acc, curr) => acc + curr, 0);
-                            const percentage = (context.parsed / total * 100).toFixed(1) + '%';
-                            return `${context.label}: $${context.parsed.toLocaleString()} (${percentage})`;
-                        }
-                    }
-                }
-            }
-        };
-
-        const palette = {
-            production: '#5D6D93',
-            postProduction: '#D86A36',
-            preProduction: '#E3B330',
-            marketing: '#39A57D',
-            contingency: '#9E9E9E',
-            prize: '#FF6B6B'
-        };
-
-        new Chart(document.getElementById('mainAllocationChart'), {
-                type: 'doughnut',
-                data: {
-                labels: ['Production', 'Post-Production', 'Contingency & Misc.', 'Pre-Production', 'Marketing & Distribution', 'Prize Fund'],
-                    datasets: [{
-                        label: 'Budget Allocation',
-                    data: [191000, 54600, 50400, 33000, 33600, 10000],
-                        backgroundColor: [
-                        palette.production,
-                        palette.postProduction,
-                        palette.contingency,
-                        palette.preProduction,
-                        palette.marketing,
-                        palette.prize
-                    ],
-                    borderColor: '#fce8d5',
-                    borderWidth: 5,
-                    hoverOffset: 10
-                    }]
-                },
-                options: {
-                ...chartOptions,
-                cutout: '70%'
-            }
-        });
-    </script>
 </body>
 </html>
