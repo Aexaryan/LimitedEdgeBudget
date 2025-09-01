@@ -11,9 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .team-button.active {
-            @apply border-2 border-blue-500 ring-2 ring-blue-500;
+        .team-button.active#alexanderBtn {
+            background-color: #3B82F6 !important;
+            color: white !important;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
         }
+        
+        .team-button.active#chrisBtn {
+            background-color: #10B981 !important;
+            color: white !important;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
+        
+        .team-button.active#mustPayBtn {
+            background-color: #EF4444 !important;
+            color: white !important;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+        }
+        
+        .team-button:hover {
+            transform: scale(1.02);
+        }
+        
         .text-team-alexander { color: #3B82F6; }
         .text-team-chris { color: #10B981; }
         .text-team-must-pay { color: #EF4444; }
@@ -74,9 +96,9 @@
 
         <section class="text-center mb-12">
             <p class="text-lg text-[#205375]">Total Project Budget</p>
-            <h2 class="text-7xl md:text-8xl font-black text-[#0B2D48] tracking-tighter my-2">$33,000</h2>
+            <h2 class="text-7xl md:text-8xl font-black text-[#0B2D48] tracking-tighter my-2">$20,000</h2>
             <p class="max-w-3xl mx-auto text-gray-600">
-                This infographic details the strategic allocation of a $33,000 budget designed to maximize production quality, ensure a polished final product, and successfully attract investors and broadcasters for a full series commission.
+                This infographic details the strategic allocation of a $20,000 budget designed to maximize production quality, ensure a polished final product, and successfully attract investors and broadcasters for a full series commission.
             </p>
         </section>
 
@@ -145,33 +167,35 @@
             </div>
         </section>
 
+
+
         <section class="bg-white rounded-lg shadow-md p-6 mb-12">
             <h3 class="text-2xl font-bold mb-1 text-center">Phase-by-Phase Investment</h3>
              <p class="text-gray-600 mb-8 text-center max-w-3xl mx-auto">Each production phase has a tailored budget to address its unique requirements, from initial creative development to the final marketing push. This granular approach ensures no critical area is underfunded.</p>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
-                    <h4 class="text-xl font-bold">Phase 1: Pre-Production ($6,600)</h4>
+                    <h4 class="text-xl font-bold">Phase 1: Pre-Production ($4,000)</h4>
                     <p class="text-gray-600 mb-4">Building the foundation. This stage is all about planning, writing, and casting to ensure a smooth production phase. The largest portion goes to script development and securing talent.</p>
                     <div class="chart-container">
                         <canvas id="preProductionChart"></canvas>
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold">Phase 2: Production (<span id="remainingProductionTotal">$16,500</span>)</h4>
+                    <h4 class="text-xl font-bold">Phase 2: Production ($10,000)</h4>
                     <p class="text-gray-600 mb-4">Capturing the vision. This is where the story comes to life. The budget prioritizes high-quality cameras, equipment, and a skilled crew to deliver stunning visuals and crisp audio.</p>
                     <div class="chart-container">
                         <canvas id="productionChart"></canvas>
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold">Phase 3: Post-Production ($8,250)</h4>
+                    <h4 class="text-xl font-bold">Phase 3: Post-Production ($5,000)</h4>
                     <p class="text-gray-600 mb-4">Polishing the final product. Editing is the most significant investment here, shaping the narrative, followed by essential sound design, color grading, and music to create a cinematic feel.</p>
                     <div class="chart-container">
                         <canvas id="postProductionChart"></canvas>
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold">Phase 4: Marketing & Contingency ($1,650)</h4>
+                    <h4 class="text-xl font-bold">Phase 4: Marketing & Contingency ($1,000)</h4>
                     <p class="text-gray-600 mb-4">Reaching the audience. A targeted budget for social media promotion to generate buzz, with a safety buffer included for any unexpected challenges during the project lifecycle.</p>
                     <div class="chart-container">
                         <canvas id="marketingChart"></canvas>
@@ -205,7 +229,7 @@
     </main>
     
     <footer class="bg-[#0B2D48] text-white p-6 text-center text-sm">
-        <p>Strategic Budget Plan for Teaser & Pilot Production. Total Budget: $33,000.</p>
+        <p>Strategic Budget Plan for Teaser & Pilot Production. Total Budget: $20,000.</p>
     </footer>
 
     <script>
@@ -274,29 +298,30 @@
 
         const budgetData = {
             'Pre-Production': {
-                'Concept Development & Script/Format Writing': 2200,
-                'Casting': 1650,
-                'Location Scouting & Permits': 1650,
-                'Production Planning': 1100
+                'Concept Development & Script Writing': 600,
+                'Casting': 1500,
+                'Location Scouting & Permits & Rent': 1500,
+                'Production Planning': 400
             },
             'Production': {
-                'Camera & Equipment Rental': 4950,
-                'Director & Cinematographer Fees': 3850,
-                'Crew Salaries': 3300,
-                'Set Design / Props': 2200,
-                'Transportation & Logistics': 1100,
-                'Food & Accommodation': 1100
+                'Director & Cinematographer Fees': 2100,
+                'Camera & Equipment Rental': 2700,
+                'Crew Salaries': 1800,
+                'Set Design / Props': 1200,
+                'Transportation & Logistics': 600,
+                'Food & Accommodation': 600,
+                'Onsite Management': 1000
             },
             'Post-Production': {
-                'Editing (Offline + Online)': 3300,
-                'Sound Design & Mixing': 1650,
-                'Music Licensing': 1100,
-                'Color Grading': 1100,
-                'Graphics & VFX': 1100
+                'Editing': 700,
+                'Sound Design & Mixing': 1500,
+                'Music Licensing / Original Score': 1500,
+                'Color Grading': 100,
+                'Graphics, Titles & VFX': 1200
             },
             'Marketing & Contingency': {
-                'Teaser Promotion': 1100,
-                'Contingency Buffer': 550
+                'Teaser Promotion': 667,
+                'Contingency Buffer': 333
             }
         };
 
