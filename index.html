@@ -19,6 +19,8 @@
             <div class="text-xl font-bold">Limit Edge Reality Show</div>
             <div class="space-x-4">
                 <a href="index.html" class="nav-link active">Overview</a>
+                <a href="program-presentation.html" class="nav-link">Program Presentation</a>
+                <a href="presentation-slides.html" class="nav-link">Presentation Slides</a>
                 <a href="pre-production.html" class="nav-link">Pre-Production</a>
                 <a href="production.html" class="nav-link">Production</a>
                 <a href="post-production.html" class="nav-link">Post-Production</a>
@@ -63,7 +65,7 @@
         <section class="bg-white rounded-xl shadow-xl p-6 md:p-10 mb-12">
             <h3 class="text-3xl font-bold text-center mb-6">Overall Budget Allocation</h3>
             <div class="chart-container h-[450px]">
-                <canvas id="mainAllocationChart"></canvas>
+                    <canvas id="mainAllocationChart"></canvas>
             </div>
             <p class="mt-6 text-gray-600 text-center max-w-2xl mx-auto">
                 The **Production** phase receives the largest allocation at **51.26%** ($191,000), ensuring high-quality filming operations. Significant investments are also made in **Post-Production** (14.65%) and **Contingency** (13.53%) to guarantee a polished final product and risk mitigation.
@@ -89,7 +91,7 @@
                     <p class="text-gray-700 text-sm mb-4">Full filming operations: crew, cast, equipment, transport, lodging, catering.</p>
                     <a href="production.html" class="inline-block bg-[#5D6D93] text-white px-4 py-2 rounded-lg hover:bg-[#4A5A7A] transition-colors">View Details</a>
                 </div>
-            </div>
+                </div>
 
             <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow">
                 <div class="text-center">
@@ -109,7 +111,7 @@
                     <p class="text-gray-700 text-sm mb-4">Media buys, PR campaigns, trailer production, social promotion.</p>
                     <a href="marketing.html" class="inline-block bg-[#39A57D] text-white px-4 py-2 rounded-lg hover:bg-[#2E8B5F] transition-colors">View Details</a>
                 </div>
-            </div>
+                </div>
 
             <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow">
                 <div class="text-center">
@@ -170,15 +172,15 @@
                         <div class="p-4 bg-[#f9f5f1] rounded-lg">
                             <h5 class="font-semibold text-[#5D6D93]">Quality Production</h5>
                             <p class="text-sm text-gray-600">Over 50% of budget dedicated to ensuring high-quality filming operations</p>
-                        </div>
+                    </div>
                         <div class="p-4 bg-[#f9f5f1] rounded-lg">
                             <h5 class="font-semibold text-[#5D6D93]">Risk Management</h5>
                             <p class="text-sm text-gray-600">13.53% contingency fund for unexpected costs and delays</p>
-                        </div>
+                </div>
                         <div class="p-4 bg-[#f9f5f1] rounded-lg">
                             <h5 class="font-semibold text-[#5D6D93]">Market Reach</h5>
                             <p class="text-sm text-gray-600">Comprehensive marketing strategy to maximize audience engagement</p>
-                        </div>
+                </div>
                     </div>
                 </div>
             </div>
@@ -198,7 +200,7 @@
             plugins: {
                 legend: {
                     position: 'bottom',
-                    labels: {
+                     labels: {
                         color: '#2B2E4A',
                         font: { size: 12 }
                     }
@@ -225,13 +227,13 @@
         };
 
         new Chart(document.getElementById('mainAllocationChart'), {
-            type: 'doughnut',
-            data: {
+                type: 'doughnut',
+                data: {
                 labels: ['Production', 'Post-Production', 'Contingency & Misc.', 'Pre-Production', 'Marketing & Distribution', 'Prize Fund'],
-                datasets: [{
-                    label: 'Budget Allocation',
+                    datasets: [{
+                        label: 'Budget Allocation',
                     data: [191000, 54600, 50400, 33000, 33600, 10000],
-                    backgroundColor: [
+                        backgroundColor: [
                         palette.production,
                         palette.postProduction,
                         palette.contingency,
@@ -242,9 +244,9 @@
                     borderColor: '#fce8d5',
                     borderWidth: 5,
                     hoverOffset: 10
-                }]
-            },
-            options: {
+                    }]
+                },
+                options: {
                 ...chartOptions,
                 cutout: '70%'
             }
